@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="global.css"/>
+</head>
+<body>
+  <main>  
+    <section id="balance" class="space-between">
+      <div class="balance-container">
+        <p class="balance-label">My balance</p>
+        <p class="balance-result">$921.48</p>
+      </div>
+      <img src="images/logo.svg"/>
+    </section>
+    
+    <section id="spending">
+      <h3>
+        Spending - Last 7 days
+      </h3>
+      
+      <!-- Here will append the json parse -->
+      <div class="bars-container">  
+      </div> 
+
+      <br/>
+      <div class="resume-container space-between">
+        <div>
+          <p class="balance-label">Total this month</p>
+          <p class="balance-result">$478.73</p>
+        </div>
+        <div>
+          <p id="month-variation">+2.4%</p>
+          <p class="balance-label">from last month</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.martindev.ar">Martín</a>.
+    </div>
+  </footer>
+
+</body>
+<script src="index.js" type="module"></script>
+</html>

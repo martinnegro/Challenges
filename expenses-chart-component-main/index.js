@@ -1,0 +1,40 @@
+
+const response = await fetch('./data.json');
+const data = await response.json();
+
+let maxAmount;
+data.forEach((day) => { 
+    if (!maxAmount) maxAmount = day.amount;
+    else if (day.amount > maxAmount) maxAmount = day.amount;
+});
+
+const barsContainer = document.querySelector(".bars-container");
+const labelsContainer = document.querySelector(".labels-container");
+console.log(data)
+
+const createBarAndLabel = (nameDay, amount) => {
+    const bar = document.createElement('div');
+    bar.style.height = `${(amount / maxAmount)*100}%`;
+    bar.classList.add("bar");
+    if (amount === maxAmount) bar.classList.add('max-amount');
+    
+    const label = document.createElement('p');
+    label.innerText = nameDay;
+
+    const amountLabel = document.createElement('div');
+    amountLabel.classList.add('amount-label');
+    amountLabel.innerHTML = `$${amount}`
+
+
+    const labeledBar = document.createElement('div');
+    labeledBar.classList.add('labeled-bar');
+    labeledBar.appendChild(amountLabel);
+    labeledBar.appendChild(bar);
+    labeledBar.appendChild(label);
+    return labeledBar;
+};
+
+data.forEach(element => {
+    const labeledBar = createBarAndLabel(element.day,element.amount)
+    barsContainer.appendChild(labeledBar)
+});
