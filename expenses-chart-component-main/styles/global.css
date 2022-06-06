@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* Primary */
+    --soft-red: hsl(10, 79%, 65%);
+    --soft-red-hover: hsl(10, 79%, 75%);
+    --cyan: hsl(186, 34%, 60%);
+    --cyan-hover: hsl(186, 34%, 75%);
+    /* Neutral */
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+    /* Typography */
+    /* Body Copy */
+    --primary-font-size: 18px;
+    /* Font */
+    /* Family: DM Sans
+    Weights: 400, 700 */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    font-size: var(--primary-font-size);
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark-brown);
+    background: var(--cream);
+}
+
+p, h3 {
+    margin: 0;
+}
+
+.round-box {
+    border-radius: 15px;
+}
+
+hr {
+    margin-block: 20px;
+    border: 1px solid var(--medium-brown);
+    border-bottom: 0;
+}
+
+.icon {
+    width: 50px;
+}
+
+.label-p {
+    font-size: 0.7rem;
+}
+
+
+.data-h3 {
+    font-size: 1.4rem;
+}
+
+.icon {
+    flex-basis: 0;
+
+}
+
+.bold {
+    font-weight: 700;
+}

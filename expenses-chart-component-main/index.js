@@ -14,23 +14,25 @@ console.log(data)
 
 const createBarAndLabel = (nameDay, amount) => {
     const bar = document.createElement('div');
-    bar.style.height = `${(amount / maxAmount)*100}%`;
+    bar.style.height = `${100 * (amount / maxAmount) }px`;
     bar.classList.add("bar");
-    if (amount === maxAmount) bar.classList.add('max-amount');
+    if (amount === maxAmount) bar.classList.add("bar-blue");
     
     const label = document.createElement('p');
+    label.classList.add('label-p');
     label.innerText = nameDay;
 
     const amountLabel = document.createElement('div');
-    amountLabel.classList.add('amount-label');
+    amountLabel.classList.add('label-p');
+    amountLabel.classList.add('label-amount');
     amountLabel.innerHTML = `$${amount}`
 
-
     const labeledBar = document.createElement('div');
-    labeledBar.classList.add('labeled-bar');
+    labeledBar.classList.add('bar-labeled');
     labeledBar.appendChild(amountLabel);
     labeledBar.appendChild(bar);
     labeledBar.appendChild(label);
+    
     return labeledBar;
 };
 

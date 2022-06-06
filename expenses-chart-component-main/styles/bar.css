@@ -1,0 +1,50 @@
+.bars-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.bar-labeled {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
+    align-items: center;
+    gap: 5px;
+}
+
+.bar {
+    width: 35px;
+    flex-shrink: 1;
+
+    border-radius: 3px;
+    background: var(--soft-red);
+}
+
+.label-amount {
+    padding: 5px;
+    
+    color: var(--cream);
+    font-weight: 700;
+    
+    background: var(--dark-brown);
+    border-radius: 3px;
+
+    opacity: 0;
+}
+
+.bar-blue {
+    background: var(--cyan);
+}
+
+.bar-labeled:hover > .bar {
+    background: var(--soft-red-hover);
+}
+
+.bar-labeled:hover > .bar-blue {
+    background: var(--cyan-hover);
+}
+
+.bar-labeled:hover > .label-amount {
+    opacity: 1;
+}
+
