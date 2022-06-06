@@ -3,7 +3,6 @@
 /* LEFT SIDE */
 .product-images {
     width: 50%;
-    height: 500px;
     padding: 40px;
 }
 
@@ -19,9 +18,10 @@
 
 .images-gallery {
     width: 100%;
-    margin-top: 10px;
+    height: max-content;
+    margin-top: 20px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .image-thumbnail {
     width: 25%;
