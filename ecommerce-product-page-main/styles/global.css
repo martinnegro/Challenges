@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 * {
+    box-sizing: border-box;
     /* COLORS */
     /* Primary */
     --orange: hsl(26, 100%, 55%);
@@ -19,12 +20,14 @@
 }
 
 html, body {
-    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
     margin: 0;
-    
     font-family: 'Kumbh Sans', sans-serif;    
+}
+
+body {
+    padding-inline: 10%;
 }
 
 header {
@@ -32,7 +35,7 @@ header {
     height: 100px;
 
     display: flex;
-
+    align-items: center;
 }
 
 main {
@@ -52,6 +55,20 @@ footer {
     align-self: flex-end;
 }
 
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* CONTAINERS DIVS */
 .product-images {
     width: 50%;
     height: 500px;
@@ -64,6 +81,13 @@ footer {
 
 .product-controls {
     width: max-content;
+}
+
+.avatar-button {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
 }
 
 @media (max-width: 600px) {

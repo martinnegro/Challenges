@@ -1,0 +1,17 @@
+.logo {
+    width: 200px;
+    height: fit-content;
+}
+
+.horizontal-ul {
+    display: flex;
+    gap: 2rem;
+
+    list-style: none;
+}
+
+.user-controls {
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
+}
