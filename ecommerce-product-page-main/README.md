@@ -40,3 +40,7 @@ You will find all the required assets in the `/images` folder. The assets are al
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
 ## Process
+
+### Set up
+    - Create CSS files based on `./style-guide.md`
+    - Create HTML skeleton with name classes
