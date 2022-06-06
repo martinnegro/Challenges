@@ -33,18 +33,29 @@ html, body {
     background: var(--cream);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
 p, h3 {
     margin: 0;
 }
 
-.round-box {
-    border-radius: 15px;
+footer {
+    margin: 20px;
 }
 
 hr {
     margin-block: 20px;
     border: 1px solid var(--medium-brown);
     border-bottom: 0;
+}
+.round-box {
+    border-radius: 15px;
 }
 
 .icon {
@@ -67,4 +78,9 @@ hr {
 
 .bold {
     font-weight: 700;
+}
+
+.goback-hover:hover {
+    transform: scale(1.02);
+    transition: transform 100ms linear;
 }

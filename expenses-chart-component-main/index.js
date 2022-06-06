@@ -24,7 +24,9 @@ const createBarAndLabel = (nameDay, amount) => {
 
     const amountLabel = document.createElement('div');
     amountLabel.classList.add('label-p');
-    amountLabel.classList.add('label-amount');
+    amountLabel.classList.add('badge');
+    amountLabel.classList.add('bold');
+    amountLabel.classList.add('show-on-hover');
     amountLabel.innerHTML = `$${amount}`
 
     const labeledBar = document.createElement('div');
