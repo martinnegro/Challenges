@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
@@ -56,20 +57,36 @@
 
     <div class="product-description">
       Sneaker Company
+      <h1>
+        Fall Limited Edition Sneakers
+      </h1>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
     
-      Fall Limited Edition Sneakers
-    
-      These low-profile sneakers are your perfect casual wear companion. Featuring a 
-      durable rubber outer sole, they’ll withstand everything the weather can offer.
-    
-      $125.00
-      50%
-      $250.00
+      <div class="price">
+        <h2 class="price-amount">
+          $250.00 
+          <span class="discount-badge">50%</span>
+        </h2>
+        <s class="price-before" >$125.00</s>
+      </div>
     </div>
 
     <div class="product-controls">
-        0
-        Add to cart
+        <div class="quantity-controls">
+        <button>
+          <img src="images/icon-minus.svg" alt="">
+        </button>
+        <span>0</span>
+        <button>
+          <img src="images/icon-plus.svg" alt="">
+        </button>
+        </div>
+        <button class="product-add-button">
+          Add to cart
+        </button>
     </div>
 
   </main>

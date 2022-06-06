@@ -45,3 +45,4 @@ There is also a `style-guide.md` file containing the information you'll need, su
     - Create CSS files based on `./style-guide.md`.
     - Create HTML skeleton with name classes.
     - Position divs containers.
+    - Layout header and main.

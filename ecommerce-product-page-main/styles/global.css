@@ -68,21 +68,6 @@ a {
     text-decoration: none;
 }
 
-/* CONTAINERS DIVS */
-.product-images {
-    width: 50%;
-    height: 500px;
-}
-
-.product-description {
-    width: 50%;
-    height: max-content;
-}
-
-.product-controls {
-    width: max-content;
-}
-
 .avatar-button {
     width: 50px;
     height: 50px;
