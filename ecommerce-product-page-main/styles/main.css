@@ -4,12 +4,43 @@
 .product-images {
     width: 50%;
     height: 500px;
+    padding: 40px;
 }
 
+
+.image-main {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.images-gallery {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.image-thumbnail {
+    width: 25%;
+    aspect-ratio: 1/1;
+    display: flex;
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.selected-thumbnail {
+    border: 2px solid var(--orange);
+    opacity: 0.5;
+}
 /* RIGHT SIDE */
 .product-description {
     width: 50%;
     height: max-content;
+    padding: 40px;
 }
 
 
@@ -26,6 +57,7 @@
 
 .product-controls {
     width: 50%;
+    padding-inline: 40px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
